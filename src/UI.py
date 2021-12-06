@@ -9,6 +9,8 @@ class MainGrid:
 	
 	def __init__(self):
 		self.grid = Gtk.Grid()
+		self.grid.set_margin_top(10)
+		self.grid.set_margin_bottom(10)
 	
 	def create(self):
 		boxLabels = BoxLabels().create()
@@ -25,7 +27,9 @@ class MainGrid:
 class BoxLabels:
 	def __init__(self):
 		self.box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=15)
-		self.box.set_margin_top(10)
+		self.box.set_margin_top(8)
+		self.box.set_margin_left(10)
+		self.box.set_margin_right(10)
 		
 	def create(self):
 		labelArea = Gtk.Label(label='Area: ')
@@ -105,6 +109,8 @@ class BtnTrack:
 	btn = Gtk.Button(label='Track') # Static
 		
 	def create(): # Static
+		BtnTrack.btn.set_margin_left(10)
+		BtnTrack.btn.set_margin_right(10)
 		BtnTrack.init_events()
 		return BtnTrack.btn
 		

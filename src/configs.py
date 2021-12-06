@@ -1,5 +1,5 @@
-AREAS = ['Area 1', 'Area 2', 'Area 3']
-REASONS = ['Reason 1', 'Reason 2', 'Reason 3']
+AREAS = ['ProjectA', 'ProjectB', 'ProjectC']
+REASONS = ['Dev', 'Support', 'Meeting']
 WRITE_INTERVAL_SEC = 30
 OUTPUT_FOLDER = 'data'
 WORKING_HOUR_START = 8
