@@ -30,19 +30,13 @@ class TimeTracking:
 						
 					with open(output_file, 'w') as f:
 						f.write(str(tracked_time))
-						
-					print(f'thread added {configs.WRITE_INTERVAL_SEC}s in current file')
-				else:
-					print('Not supposed to work!')
 		
 	def start(self, area, reason):
 		self.active = False
 		self.area = area
 		self.reason = reason
 		self.active = True
-		print('thread started')
 		
 	def stop(self):
 		self.active = False
-		print('thread stopped')
 		
