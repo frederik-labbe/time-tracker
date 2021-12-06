@@ -1,2 +1,4 @@
 # time-tracker
-Tool for Time Tracking
+Simple tool for time tracking.
+
+![Main interface](screenshot.png)
